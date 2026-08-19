@@ -39,7 +39,6 @@ Thumbs.db
 
 # Optimization results
 *.json
-!requirements.txt
 
 # Game specific
 *.log

@@ -353,7 +353,12 @@ if __name__ == "__main__":
         
         print("\n✅ 优化完成！")
         print("\n使用方法：")
-        print("  python main.py --weights optimization_results.json")
+        saved_file = {
+            "1": "quick_optimization.json",
+            "2": "full_optimization.json",
+            "3": "custom_optimization.json",
+        }.get(choice, "optimization_results.json")
+        print(f"  python main.py --weights {saved_file}")
         
     except KeyboardInterrupt:
         print("\n\n⚠️  优化被用户中断")

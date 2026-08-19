@@ -49,10 +49,16 @@ class Game2048:
                 for j in range(self.size) if self.board[i][j] == 0]
     
     def clone(self) -> 'Game2048':
-        """克隆当前游戏状态"""
-        new_game = Game2048(self.size)
+        """
+        克隆当前游戏状态
+        使用 __new__ 跳过 __init__（避免多余的随机方块生成），
+        因为 clone() 在AI搜索树中被大量调用，是性能热点
+        """
+        new_game = Game2048.__new__(Game2048)
+        new_game.size = self.size
         new_game.board = copy.deepcopy(self.board)
         new_game.score = self.score
+        new_game.moved = self.moved
         return new_game
     
     def move(self, direction: str) -> bool:

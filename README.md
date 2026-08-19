@@ -22,6 +22,11 @@ An intelligent 2048 game AI using Expectimax algorithm with Pygame visualization
 
 ### 🚀 Quick Start
 
+#### Requirements
+
+- Python 3.8+
+- Dependencies pinned in `requirements.txt` (pygame 2.5.2, numpy 1.26.4)
+
 #### Installation
 
 ```bash
@@ -47,7 +52,7 @@ python main.py --depth 4
 
 **Use Optimized Weights:**
 ```bash
-python main.py --weights optimization_results.json
+python main.py --weights full_optimization.json
 ```
 
 ### 🧬 Weight Optimization
@@ -55,13 +60,17 @@ python main.py --weights optimization_results.json
 Run genetic algorithm to optimize AI weights:
 
 ```bash
-# Quick optimization (~5 minutes)
+# Quick optimization (~5 minutes), saves to quick_optimization.json
 python weight_optimizer.py
 # Choose option 1
 
-# Full optimization (~30-60 minutes, recommended)
+# Full optimization (~30-60 minutes, recommended), saves to full_optimization.json
 python weight_optimizer.py
 # Choose option 2
+
+# Custom parameters, saves to custom_optimization.json
+python weight_optimizer.py
+# Choose option 3
 ```
 
 ### 🎮 Controls
@@ -164,6 +173,11 @@ Issues and Pull Requests are welcome!
 
 ### 🚀 快速开始
 
+#### 环境要求
+
+- Python 3.8+
+- 依赖版本已固定在 `requirements.txt` 中（pygame 2.5.2，numpy 1.26.4）
+
 #### 安装依赖
 
 ```bash
@@ -189,7 +203,7 @@ python main.py --depth 4
 
 **使用优化后的权重：**
 ```bash
-python main.py --weights optimization_results.json
+python main.py --weights full_optimization.json
 ```
 
 ### 🧬 权重优化
@@ -197,13 +211,17 @@ python main.py --weights optimization_results.json
 运行遗传算法优化AI权重：
 
 ```bash
-# 快速优化（约5分钟）
+# 快速优化（约5分钟），结果保存到 quick_optimization.json
 python weight_optimizer.py
 # 选择选项 1
 
-# 完整优化（约30-60分钟，推荐）
+# 完整优化（约30-60分钟，推荐），结果保存到 full_optimization.json
 python weight_optimizer.py
 # 选择选项 2
+
+# 自定义参数，结果保存到 custom_optimization.json
+python weight_optimizer.py
+# 选择选项 3
 ```
 
 ### 🎮 操作说明
