@@ -4,7 +4,7 @@
 """
 import random
 import copy
-from typing import List, Tuple, Optional
+from typing import List, Tuple
 
 
 class Game2048:

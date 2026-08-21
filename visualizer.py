@@ -4,7 +4,6 @@
 """
 import pygame
 import sys
-from typing import Optional
 from game_logic import Game2048
 from ai_solver import ExpectimaxAI
 
