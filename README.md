@@ -55,6 +55,18 @@ python main.py --depth 4
 python main.py --weights full_optimization.json
 ```
 
+### ✅ Testing
+
+The project ships with a small `unittest`-based test suite covering the core
+game logic (move/merge rules, cloning, game-over detection) and the
+Expectimax evaluation function.
+
+```bash
+python -m unittest discover -s tests -v
+# or, if pytest is installed:
+pytest tests/
+```
+
 ### 🧬 Weight Optimization
 
 Run genetic algorithm to optimize AI weights:
@@ -134,6 +146,7 @@ The AI uses a heuristic evaluation function considering:
 ├── visualizer.py        # Pygame visualization
 ├── main.py              # Main entry point
 ├── requirements.txt     # Python dependencies
+├── tests/               # Unit tests (unittest/pytest)
 └── README.md            # This file
 ```
 
@@ -204,6 +217,17 @@ python main.py --depth 4
 **使用优化后的权重：**
 ```bash
 python main.py --weights full_optimization.json
+```
+
+### ✅ 测试
+
+项目包含一套基于 `unittest` 的小型测试套件，覆盖核心游戏逻辑（移动/合并规则、
+克隆隔离性、游戏结束判定）以及 Expectimax 评估函数。
+
+```bash
+python -m unittest discover -s tests -v
+# 若已安装 pytest，也可以：
+pytest tests/
 ```
 
 ### 🧬 权重优化
@@ -285,6 +309,7 @@ AI使用启发式评估函数评估棋盘状态，考虑以下因素：
 ├── visualizer.py        # Pygame可视化界面
 ├── main.py              # 主程序入口
 ├── requirements.txt     # Python依赖
+├── tests/               # 单元测试（unittest/pytest）
 └── README.md            # 本文件
 ```
 
