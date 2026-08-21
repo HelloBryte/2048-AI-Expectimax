@@ -24,8 +24,8 @@ An intelligent 2048 game AI using Expectimax algorithm with Pygame visualization
 
 #### Requirements
 
-- Python 3.8+
-- Dependencies pinned in `requirements.txt` (pygame 2.5.2, numpy 1.26.4)
+- Python 3.9+ (required by the pinned numpy version)
+- Dependencies pinned in `requirements.txt` (pygame 2.6.1, numpy 1.26.4)
 
 #### Installation
 
@@ -127,7 +127,7 @@ The AI uses a heuristic evaluation function considering:
 ### 📁 Project Structure
 
 ```
-2048/
+2048-ai-expectimax/
 ├── game_logic.py        # Game core logic
 ├── ai_solver.py         # Expectimax AI algorithm
 ├── weight_optimizer.py  # Genetic algorithm optimizer
@@ -175,8 +175,8 @@ Issues and Pull Requests are welcome!
 
 #### 环境要求
 
-- Python 3.8+
-- 依赖版本已固定在 `requirements.txt` 中（pygame 2.5.2，numpy 1.26.4）
+- Python 3.9+（固定版本的 numpy 需要此版本）
+- 依赖版本已固定在 `requirements.txt` 中（pygame 2.6.1，numpy 1.26.4）
 
 #### 安装依赖
 
@@ -278,7 +278,7 @@ AI使用启发式评估函数评估棋盘状态，考虑以下因素：
 ### 📁 项目结构
 
 ```
-2048/
+2048-ai-expectimax/
 ├── game_logic.py        # 游戏核心逻辑
 ├── ai_solver.py         # Expectimax AI算法
 ├── weight_optimizer.py  # 遗传算法优化器
