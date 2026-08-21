@@ -206,7 +206,7 @@ class GeneticOptimizer:
             if best_fitness > self.best_score:
                 self.best_score = best_fitness
                 self.best_weights = best_individual.copy()
-                print(f"\n✨ 发现更优权重！")
+                print("\n✨ 发现更优权重！")
                 print(f"   适应度: {best_fitness:.1f}")
                 print(f"   平均分数: {best_stats['avg_score']:.0f}")
                 print(f"   最大方块: {best_stats['max_tile']:.0f}")
