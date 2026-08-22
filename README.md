@@ -25,7 +25,7 @@ An intelligent 2048 game AI using Expectimax algorithm with Pygame visualization
 #### Requirements
 
 - Python 3.9+ (required by the pinned numpy version)
-- Dependencies pinned in `requirements.txt` (pygame 2.6.1, numpy 1.26.4)
+- Dependencies pinned in `requirements.txt` (pygame 2.6.1, numpy 2.0.2)
 
 #### Installation
 
@@ -148,7 +148,7 @@ The AI uses a heuristic evaluation function considering:
 
 ### 📝 License
 
-MIT License
+[MIT License](LICENSE)
 
 ### 🤝 Contributing
 
@@ -176,7 +176,7 @@ Issues and Pull Requests are welcome!
 #### 环境要求
 
 - Python 3.9+（固定版本的 numpy 需要此版本）
-- 依赖版本已固定在 `requirements.txt` 中（pygame 2.6.1，numpy 1.26.4）
+- 依赖版本已固定在 `requirements.txt` 中（pygame 2.6.1，numpy 2.0.2）
 
 #### 安装依赖
 
@@ -299,7 +299,7 @@ AI使用启发式评估函数评估棋盘状态，考虑以下因素：
 
 ### 📝 许可证
 
-MIT License
+[MIT License](LICENSE)
 
 ### 🤝 贡献
 
